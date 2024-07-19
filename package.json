@@ -1,0 +1,45 @@
+{
+  "name": "osap-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "NODE_TLS_REJECT_UNAUTHORIZED=0 next build",
+    "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 next start",
+    "lint": "next lint",
+    "format": "npx prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css,scss}'"
+  },
+  "dependencies": {
+    "@aws-amplify/ui-react": "^5.3.0",
+    "@egoist/tailwindcss-icons": "^1.1.0",
+    "@tanstack/react-query": "^4.35.3",
+    "autoprefixer": "10.4.15",
+    "aws-amplify": "^5.3.10",
+    "file-saver": "^2.0.5",
+    "lodash": "^4.17.21",
+    "next": "^13.4.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.46.1"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.104",
+    "@tanstack/eslint-plugin-query": "^4.34.1",
+    "@types/file-saver": "^2.0.5",
+    "@types/lodash": "^4.14.198",
+    "@types/node": "^20.5.1",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "encoding": "^0.1.13",
+    "eslint": "^8.47.0",
+    "eslint-config-next": "^13.4.19",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "postcss": "^8.4.28",
+    "postcss-nesting": "^12.0.1",
+    "prettier": "^3.0.2",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6"
+  }
+}

@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+
+    margin: 0;
+  }
+}
+
+body {
+  .amplify-button--primary {
+    background-color: #107eff;
+  }
+  .amplify-button--primary:hover {
+    opacity: 0.8;
+  }
+  .amplify-button--link {
+    color: #107eff;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .amplify-button--link:hover {
+    background-color: #d5e4f5;
+  }
+}
