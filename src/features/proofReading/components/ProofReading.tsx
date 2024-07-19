@@ -39,7 +39,7 @@ export const ProofReading = ({ orderId, orderStatus }: Props) => {
   return (
     <section className="rounded-md bg-white py-5 pl-6 pr-3 shadow-md">
       <ProofReadingTitle refetch={refetch} dataUpdatedAt={dataUpdatedAt} />
-      <ProofReadingItems data={data} />
+      <ProofReadingItems data={data} orderStatus={orderStatus} />
       <ProofReadingForm orderId={orderId} orderStatus={orderStatus} refetch={refetch} />
     </section>
   )

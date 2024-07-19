@@ -15,12 +15,13 @@ export const OrderItem = ({ data }: Props) => {
   // 注文日付と出荷日はDBには「-」区切りで保存されているため、「/」区切りに変換
   const formattedOrderedDate = new Date(data.orderedDate).toLocaleDateString()
   const formattedShippingDate = data.shippingDate ? new Date(data.shippingDate).toLocaleDateString() : ''
+  const validStatuses = ['Draft', 'Ordered', 'Proofcreating', 'Proofreading', 'PrCompleted', 'Prshipped', 'Withdrawn']
 
   return (
     <article className="rounded-lg shadow-md shadow-gray-400">
       <div className="flex flex-col gap-2 rounded-t-lg bg-blue-100 px-4 pb-2 pt-4">
         <h2 className="flex w-full gap-1 text-base">
-          {data.status === 'Draft' && <StatusChip statusName={data.status} />}
+          {validStatuses.includes(data.status) && <StatusChip statusName={data.status} />}
           <Link href={`/order/${data.orderId}`} className="text-blue-900 underline visited:text-purple-700 hover:text-blue-500">
             注文書No.：{data.customOrderId}
           </Link>

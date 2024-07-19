@@ -1,1 +1,1 @@
-export type OrderStatus = 'Draft' | 'Ordered' | 'Proofreading' | 'PrCompleted'
+export type OrderStatus = 'Draft' | 'Ordered' | 'Proofcreating' | 'Proofreading' | 'PrCompleted' | 'Prshipped' | 'Withdrawn'
